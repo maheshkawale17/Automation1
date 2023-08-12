@@ -32,7 +32,7 @@ public class Flib {
 	     return data;
 	}
 	// it is use to get last row count of row where we store data
-	public int getLastRowCount(String excelpath,String sheetName,int rowCount,int cellCount) throws EncryptedDocumentException, IOException    
+	public int getLastRowCount(String excelpath,String sheetName) throws EncryptedDocumentException, IOException    
 	{
 		FileInputStream fis = new FileInputStream(excelpath);//provide file of the path
 		   Workbook wb = WorkbookFactory.create(fis);//make the file for ready to read
